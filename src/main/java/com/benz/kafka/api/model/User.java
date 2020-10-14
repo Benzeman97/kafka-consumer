@@ -1,4 +1,4 @@
-package com.benz.kafka.consumer.api.model;
+package com.benz.kafka.api.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -11,14 +11,16 @@ import lombok.Setter;
 @Setter
 public class User {
 
+    private int userId;
     private String userName;
-    private String deptName;
+    private double salary;
 
     @Override
     public String toString() {
         return "User{" +
-                "userName='" + userName + '\'' +
-                ", deptName='" + deptName + '\'' +
+                "userId=" + userId +
+                ", userName='" + userName + '\'' +
+                ", salary=" + salary +
                 '}';
     }
 }

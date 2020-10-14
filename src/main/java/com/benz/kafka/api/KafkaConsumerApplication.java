@@ -1,4 +1,4 @@
-package com.benz.kafka.consumer.api;
+package com.benz.kafka.api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

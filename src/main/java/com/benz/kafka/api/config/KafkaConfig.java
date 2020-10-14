@@ -1,8 +1,7 @@
-package com.benz.kafka.consumer.api.config;
+package com.benz.kafka.api.config;
 
-import com.benz.kafka.consumer.api.model.User;
+import com.benz.kafka.api.model.User;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
-import org.apache.kafka.common.protocol.types.Field;
 import org.apache.kafka.common.serialization.StringDeserializer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -18,6 +17,7 @@ import java.util.concurrent.ConcurrentHashMap;
 @Configuration
 @EnableKafka
 public class KafkaConfig {
+
 
     private ConsumerFactory<String,String> consumerFactory()
     {
@@ -58,6 +58,7 @@ public class KafkaConfig {
     {
         ConcurrentKafkaListenerContainerFactory<String,User> factory
                 =new ConcurrentKafkaListenerContainerFactory<>();
+
         factory.setConsumerFactory(userConsumerFactory());
 
         return factory;

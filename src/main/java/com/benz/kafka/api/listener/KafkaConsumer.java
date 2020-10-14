@@ -1,6 +1,6 @@
-package com.benz.kafka.consumer.api.listener;
+package com.benz.kafka.api.listener;
 
-import com.benz.kafka.consumer.api.model.User;
+import com.benz.kafka.api.model.User;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Component;
 
